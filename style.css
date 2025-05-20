@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(34, 41, 39);
+  margin: 0;
+  color: white;
+}
+main {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.circle {
+  /* background-color: blueviolet; */
+  border-radius: 100%;
+  position: absolute;
+}
+.circle1 {
+  background-image: radial-gradient(
+    69.62% 69.62% at 50% 50%,
+    #ea8bfa 0%,
+    #7526f5 100%
+  );
+  height: 120px;
+  width: 120px;
+  top: -40px;
+  left: -80px;
+}
+.circle2 {
+  background-image: radial-gradient(
+    63.76% 63.76% at 50% 50%,
+    #ff00c7 0%,
+    #e9c6e9 100%
+  );
+  height: 380px;
+  width: 380px;
+  top: -150px;
+  right: -200px;
+}
+.circle3 {
+  background-image: radial-gradient(
+    69.62% 69.62% at 50% 50%,
+    #ab6db6 0%,
+    #7126e9 100%
+  );
+  height: 220px;
+  width: 220px;
+  bottom: -100px;
+  left: -100px;
+}
+.card-container {
+  position: relative;
+}
+
+.card {
+  max-width: 400px;
+  background-image: linear-gradient(
+    148deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(83, 83, 35, 0.2) 50%
+  );
+
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.card-content {
+  border: 0.744px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+.card-img {
+  vertical-align: middle;
+}
+.heart {
+  font-size: 30px;
+}
+.name-heart-container {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 18px;
+  /* margin-top: 20px; */
+}
+.name-heart-container .name {
+  background: rgba(241, 198, 68, 0.24);
+  color: #ffd147;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 1px;
+  margin-top: 8px;
+  border-radius: 3px;
+}
+
+.card-title {
+  font-weight: 900;
+  font-size: 20px;
+  padding: 14px 16px;
+}
+.subtitle {
+  font-size: 14px;
+  font-weight: 300;
+  padding: 10px 12px;
+}
+
+.star-rating {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+}
+
+.rating {
+  color: #f1c644;
+  font-size: 14px;
+  margin-inline: 8px;
+}
+.count {
+  color: #dbdbdb;
+  font-size: 12px;
+}
+button {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  padding-block: 20px;
+  font-size: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+button:hover {
+  background-color: whitesmoke;
+  color: black;
+}
